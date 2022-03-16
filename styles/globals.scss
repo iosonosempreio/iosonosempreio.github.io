@@ -1,0 +1,24 @@
+@import "./custom.bootstrap.scss";
+
+:root {
+	--light: #f8f8f8;
+	--color1: #000040;
+	--color2: #ff6b00;
+	--header-size: 2rem;
+}
+
+body {
+	background-color: var(--light);
+	color: var(--color1);
+}
+
+a {
+	color: var(--color2);
+	text-decoration: none;
+	font-weight: 500;
+	&:hover {
+		color: var(--light);
+		background-color: var(--color2);
+		text-decoration: underline;
+	}
+}
