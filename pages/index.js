@@ -27,6 +27,8 @@ export default function Home() {
 				<Row>
 					<Col
 						md={{ span: 4, offset: 2 }}
+						lg={{ span: 4, offset: 2 }}
+						xl={{ span: 3, offset: 3 }}
 						className={classNames("d-flex", "align-items-center")}
 					>
 						<p>
@@ -42,6 +44,8 @@ export default function Home() {
 					</Col>
 					<Col
 						md={{ span: 4, offset: 0 }}
+						lg={{ span: 4, offset: 0 }}
+						xl={{ span: 3, offset: 0 }}
 						className={classNames("d-flex", "align-items-center")}
 					>
 						<div className={classNames("img-fluid", styles.profileImage)}>
