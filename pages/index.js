@@ -1,15 +1,15 @@
 import classNames from "classnames";
 import Head from "next/head";
-import Image from "next/image";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../styles/Home.module.scss";
 import profileImage from "../images/profile-picture.jpeg";
 import Header from "../components/header/Header";
-import Footer from "../components/Footer/FOoter";
+import Footer from "../components/Footer";
 
 export default function Home() {
 	return (
 		<>
+		
 			<Container
 				className={classNames(
 					"d-flex",
@@ -24,11 +24,13 @@ export default function Home() {
 						<Header />
 					</Col>
 				</Row>
-				<Row>
+				<Row className={classNames(styles.profile)}>
 					<Col
-						md={{ span: 4, offset: 2 }}
-						lg={{ span: 4, offset: 2 }}
-						xl={{ span: 3, offset: 3 }}
+						xs={{ span: 10, offset: 1 }}
+						sm={{ span: 8, offset: 2 }}
+						md={{ span: 5, offset: 1 }}
+						lg={{ span: 5, offset: 1 }}
+						// xl={{ span: 3, offset: 3 }}
 						className={classNames("d-flex", "align-items-center")}
 					>
 						<p>
@@ -43,9 +45,11 @@ export default function Home() {
 						</p>
 					</Col>
 					<Col
-						md={{ span: 4, offset: 0 }}
-						lg={{ span: 4, offset: 0 }}
-						xl={{ span: 3, offset: 0 }}
+						xs={{ span: 10, offset: 1 }}
+						sm={{ span: 8, offset: 2 }}
+						md={{ span: 5, offset: 0 }}
+						lg={{ span: 5, offset: 0 }}
+						// xl={{ span: 3, offset: 0 }}
 						className={classNames("d-flex", "align-items-center")}
 					>
 						<div className={classNames("img-fluid", styles.profileImage)}>
