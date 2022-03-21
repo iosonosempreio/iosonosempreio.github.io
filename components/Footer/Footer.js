@@ -4,11 +4,27 @@ import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<footer className={classNames(styles.footer, "my-3", "text-end")}>
-			{/* <Link href="/">cv</Link> /{" "} */}
-			<Link href="https://twitter.com/iosonosempreio">tw</Link> /{" "}
-			<Link href="https://github.com/iosonosempreio">gh</Link> /{" "}
-			<Link href="https://observablehq.com/@iosonosempreio">hq</Link>
+		<footer className={classNames(styles.footer, "text-end")}>
+			<p className={classNames("p-0", "m-0")}>
+				{/* <Link href="/">cv</Link> /{" "} */}
+				<Link href="https://twitter.com/iosonosempreio">
+					<a target="_blank" rel="noopener noreferrer">
+						tw
+					</a>
+				</Link>{" "}
+				/{" "}
+				<Link href="https://github.com/iosonosempreio">
+					<a target="_blank" rel="noopener noreferrer">
+						gh
+					</a>
+				</Link>{" "}
+				/{" "}
+				<Link href="https://observablehq.com/@iosonosempreio">
+					<a target="_blank" rel="noopener noreferrer">
+						hq
+					</a>
+				</Link>
+			</p>
 		</footer>
 	);
 }
