@@ -35,22 +35,25 @@ export default function Home() {
 						xl={{ span: 4, offset: 2 }}
 						className={classNames("d-lg-flex", "align-items-lg-center")}
 					>
-						<p className="big">
-							An information designer and design researcher working across data,
-							information visualization, digital humanities, and creative
-							coding.
-							<br />
-							He obtained a Ph.D. in Design in 2022 with a thesis on
-							visualization, literary studies, and design. He is a member of{" "}
-							<a href="https://densitydesign.org/person/tommaso-elli/">
-								DensityDesign
-							</a>
-							, participates in the development of{" "}
-							<a href="https://rawgraphs.io/">RAWGraphs</a>, and is one of the
-							founders of{" "}
-							<a href="https://abilitiamo.org/">Abilítiamo Autismo</a>. In his
-							spare time, he enjoys mountains and music.
-						</p>
+						<span>
+							<p className="big">
+								An information designer and design researcher working across data,
+								information visualization, digital humanities, and creative
+								coding.
+								<br />
+								He obtained a Ph.D. in Design in 2022 with a thesis on
+								visualization, literary studies, and design. He is a member of{" "}
+								<a href="https://densitydesign.org/person/tommaso-elli/">
+									DensityDesign
+								</a>
+								, participates in the development of{" "}
+								<a href="https://rawgraphs.io/">RAWGraphs</a>, and is one of the
+								founders of{" "}
+								<a href="https://abilitiamo.org/">Abilítiamo Autismo</a>. In his
+								spare time, he enjoys mountains and music.
+							</p>
+							<p className="big"><a href="link-to-file.pdf" download="tommaso-elli-CV.pdf">CV</a> and <a href="https://densitydesign.org/person/tommaso-elli/" target="_blank">portfolio</a>.</p>
+						</span>
 					</Col>
 					<Col
 						xs={{ span: 12, offset: 0, order: 1 }}
@@ -58,7 +61,12 @@ export default function Home() {
 						md={{ span: 8, offset: 2, order: 1 }}
 						lg={{ span: 5, offset: 0, order: 2 }}
 						xl={{ span: 4, offset: 0 }}
-						className={classNames("XXd-flex", "XXalign-items-center", "mb-3", "mb-lg-0")}
+						className={classNames(
+							"XXd-flex",
+							"XXalign-items-center",
+							"mb-3",
+							"mb-lg-0"
+						)}
 					>
 						<div className={classNames("img-fluid", styles.profileImage)}>
 							<div style={{ backgroundImage: `url(${profileImage.src})` }} />
