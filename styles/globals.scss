@@ -23,6 +23,12 @@ a {
 	}
 }
 
+p {
+	&.big {
+		font-size: 1.25rem;
+	}
+}
+
 .color1 {
 	color: var(--color1);
 }

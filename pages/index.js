@@ -12,65 +12,61 @@ export default function Home() {
 		<>
 			<Container
 				className={classNames(
-					"d-flex",
-					"flex-column",
-					"justify-content-between",
+					"d-block",
+					"d-md-flex",
+					"flex-md-column",
+					"justify-content-md-between",
 					styles.cover
 				)}
 				fluid
 			>
-				<Row>
-					<Col xs={{ span: 8 }} className={classNames("pt-3")}>
+				<Row className={classNames("my-3")}>
+					<Col xs={{ span: 8 }} className={classNames()}>
 						<Header />
 					</Col>
-					<Col xs={{ span: 4 }}>
-						<Menu />
-					</Col>
+					<Col xs={{ span: 4 }}>{/* <Menu /> */}</Col>
 				</Row>
 				<Row className={classNames(styles.profile, "my-3")}>
 					<Col
 						xs={{ span: 12, offset: 0, order: 2 }}
-						sm={{ span: 8, offset: 2 }}
-						md={{ span: 5, offset: 1, order: 1 }}
-						lg={{ span: 5, offset: 1 }}
-						// xl={{ span: 3, offset: 3 }}
-						className={classNames("d-flex", "align-items-center")}
+						sm={{ span: 10, offset: 1 }}
+						md={{ span: 8, offset: 2, order: 2 }}
+						lg={{ span: 5, offset: 1, order: 1 }}
+						xl={{ span: 4, offset: 2 }}
+						className={classNames("d-lg-flex", "align-items-lg-center")}
 					>
-						<p className={classNames("mt-3", "mb-0", "my-md-4")}>
-							He is an information designer and design researcher working across
-							data, information visualization, digital humanities, and creative
-							coding. He obtained a Ph.D. in Design in 2022 with a thesis on
+						<p className="big">
+							An information designer and design researcher working across data,
+							information visualization, digital humanities, and creative
+							coding.
+							<br />
+							He obtained a Ph.D. in Design in 2022 with a thesis on
 							visualization, literary studies, and design. He is a member of{" "}
 							<a href="https://densitydesign.org/person/tommaso-elli/">
 								DensityDesign
-							</a>{" "}
-							since 2016, and he is one of the founders of{" "}
+							</a>
+							, participates in the development of{" "}
+							<a href="https://rawgraphs.io/">RAWGraphs</a>, and is one of the
+							founders of{" "}
 							<a href="https://abilitiamo.org/">Abilítiamo Autismo</a>. In his
 							spare time, he enjoys mountains and music.
 						</p>
 					</Col>
 					<Col
 						xs={{ span: 12, offset: 0, order: 1 }}
-						sm={{ span: 8, offset: 2 }}
-						md={{ span: 5, offset: 0, order: 2 }}
-						lg={{ span: 5, offset: 0 }}
-						// xl={{ span: 3, offset: 0 }}
-						className={classNames("d-flex", "align-items-center")}
+						sm={{ span: 10, offset: 1 }}
+						md={{ span: 8, offset: 2, order: 1 }}
+						lg={{ span: 5, offset: 0, order: 2 }}
+						xl={{ span: 4, offset: 0 }}
+						className={classNames("XXd-flex", "XXalign-items-center", "mb-3", "mb-lg-0")}
 					>
-						<div
-							className={classNames(
-								"img-fluid",
-								styles.profileImage,
-								"Xmb-5",
-								"Xmb-md-0"
-							)}
-						>
+						<div className={classNames("img-fluid", styles.profileImage)}>
 							<div style={{ backgroundImage: `url(${profileImage.src})` }} />
 						</div>
 					</Col>
 				</Row>
-				<Row>
-					<Col className={classNames("pb-3")}>
+				<Row className={classNames("my-3")}>
+					<Col>
 						<Footer />
 					</Col>
 				</Row>
