@@ -6,7 +6,6 @@ export default function Footer() {
 	return (
 		<footer className={classNames(styles.footer, "text-end")}>
 			<p className={classNames("p-0", "m-0")}>
-				{/* <Link href="/">cv</Link> /{" "} */}
 				<Link href="https://twitter.com/iosonosempreio">
 					<a target="_blank" rel="noopener noreferrer">
 						tw
