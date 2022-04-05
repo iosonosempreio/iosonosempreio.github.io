@@ -37,9 +37,9 @@ export default function Home() {
 					>
 						<span>
 							<p className="big">
-								An information designer and design researcher working across data,
-								information visualization, digital humanities, and creative
-								coding.
+								An information designer and design researcher working across
+								data, information visualization, digital humanities, and
+								creative coding.
 								<br />
 								He obtained a Ph.D. in Design in 2022 with a thesis on
 								visualization, literary studies, and design. He is a member of{" "}
@@ -52,7 +52,20 @@ export default function Home() {
 								<a href="https://abilitiamo.org/">Abilítiamo Autismo</a>. In his
 								spare time, he enjoys mountains and music.
 							</p>
-							<p className="big"><a href="tommaso-elli-CV.pdf" download="tommaso-elli-CV.pdf">CV</a> and <a href="https://densitydesign.org/person/tommaso-elli/" target="_blank">portfolio</a>.</p>
+							<p className="big">
+								<a href="tommaso-elli-CV.pdf" download="tommaso-elli-CV.pdf">
+									CV
+								</a>{" "}
+								and{" "}
+								<a
+									href="https://densitydesign.org/person/tommaso-elli/"
+									target="_blank"
+									rel="noreferrer"
+								>
+									portfolio
+								</a>
+								.
+							</p>
 						</span>
 					</Col>
 					<Col
