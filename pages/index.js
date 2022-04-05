@@ -52,7 +52,7 @@ export default function Home() {
 								<a href="https://abilitiamo.org/">Abilítiamo Autismo</a>. In his
 								spare time, he enjoys mountains and music.
 							</p>
-							<p className="big"><a href="link-to-file.pdf" download="tommaso-elli-CV.pdf">CV</a> and <a href="https://densitydesign.org/person/tommaso-elli/" target="_blank">portfolio</a>.</p>
+							<p className="big"><a href="tommaso-elli-CV.pdf" download="tommaso-elli-CV.pdf">CV</a> and <a href="https://densitydesign.org/person/tommaso-elli/" target="_blank">portfolio</a>.</p>
 						</span>
 					</Col>
 					<Col
