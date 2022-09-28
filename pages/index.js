@@ -37,7 +37,7 @@ export default function Home() {
 					>
 						<span>
 							<p className="big">
-								An information designer and design researcher working across
+								An information designer, design researcher and front-end developer working across
 								data, information visualization, digital humanities, and
 								creative coding.
 								<br />
