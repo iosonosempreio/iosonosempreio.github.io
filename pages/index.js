@@ -53,7 +53,7 @@ export default function Home() {
 								spare time, he enjoys mountains and music.
 							</p>
 							<p className="big">
-								<a href="tommaso-elli-CV_Redacted.pdf" download="tommaso-elli-CV.pdf">
+								<a href="2022-09-18.pdf" download="tommaso-elli-CV.pdf">
 									CV
 								</a>{" "}
 								and{" "}
