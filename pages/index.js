@@ -6,6 +6,7 @@ import profileImage from "../images/profile-picture.jpeg";
 import Header from "../components/header/Header";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
+import Link from "next/link";
 
 export default function Home() {
 	return (
@@ -41,11 +42,7 @@ export default function Home() {
 								<a href="2022-10-10.pdf" download="tommaso-elli-CV2022-10-10.pdf">
 									CV
 								</a>{" "}
-								and at some{" "}
-								<a href="https://densitydesign.org/person/tommaso-elli/" target="_blank" rel="noreferrer">
-									projects
-								</a>{" "}
-								I worked on.
+								and at some <Link href="/projects">projects</Link> I worked on.
 							</p>
 						</span>
 					</Col>
