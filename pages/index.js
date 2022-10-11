@@ -10,16 +10,7 @@ import Footer from "../components/Footer";
 export default function Home() {
 	return (
 		<>
-			<Container
-				className={classNames(
-					"d-block",
-					"d-md-flex",
-					"flex-md-column",
-					"justify-content-md-between",
-					styles.cover
-				)}
-				fluid
-			>
+			<Container className={classNames("d-block", "d-md-flex", "flex-md-column", "justify-content-md-between", styles.cover)} fluid>
 				<Row className={classNames("my-3")}>
 					<Col xs={{ span: 8 }} className={classNames()}>
 						<Header />
@@ -37,31 +28,20 @@ export default function Home() {
 					>
 						<span>
 							<p className="big">
-								An information designer, design researcher and front-end developer working across
-								data, information visualization, digital humanities, and
+								An information designer, design researcher and front-end developer working across data, information visualization, digital humanities, and
 								creative coding.
 								<br />
-								He obtained a Ph.D. in Design in 2022 with a thesis on
-								visualization, literary studies, and design. He is a member of{" "}
-								<a href="https://densitydesign.org/person/tommaso-elli/">
-									DensityDesign
-								</a>
-								, participates in the development of{" "}
-								<a href="https://rawgraphs.io/">RAWGraphs</a>, and is one of the
-								founders of{" "}
-								<a href="https://abilitiamo.org/">Abilítiamo Autismo</a>. In his
+								He obtained a Ph.D. in Design in 2022 with a thesis on visualization, literary studies, and design. He is a member of{" "}
+								<a href="https://densitydesign.org/person/tommaso-elli/">DensityDesign</a> since 2016, participates in the development of{" "}
+								<a href="https://rawgraphs.io/">RAWGraphs</a>, and is one of the founders of <a href="https://abilitiamo.org/">Associazione Abilítiamo Autismo</a>. In his
 								spare time, he enjoys mountains and music.
 							</p>
 							<p className="big">
-								<a href="2022-09-18.pdf" download="tommaso-elli-CV.pdf">
+								<a href="2022-10-10.pdf" download="tommaso-elli-CV2022-10-10.pdf">
 									CV
 								</a>{" "}
 								and{" "}
-								<a
-									href="https://densitydesign.org/person/tommaso-elli/"
-									target="_blank"
-									rel="noreferrer"
-								>
+								<a href="https://densitydesign.org/person/tommaso-elli/" target="_blank" rel="noreferrer">
 									portfolio
 								</a>
 								.
@@ -74,12 +54,7 @@ export default function Home() {
 						md={{ span: 8, offset: 2, order: 1 }}
 						lg={{ span: 5, offset: 0, order: 2 }}
 						xl={{ span: 4, offset: 0 }}
-						className={classNames(
-							"XXd-flex",
-							"XXalign-items-center",
-							"mb-3",
-							"mb-lg-0"
-						)}
+						className={classNames("XXd-flex", "XXalign-items-center", "mb-3", "mb-lg-0")}
 					>
 						<div className={classNames("img-fluid", styles.profileImage)}>
 							<div style={{ backgroundImage: `url(${profileImage.src})` }} />
