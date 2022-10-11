@@ -32,10 +32,13 @@ export default function Projects() {
 								This page is not here yet. In the meanwhile you can browse my projects at my profile page at{" "}
 								<a href="https://densitydesign.org/person/tommaso-elli/" target="_blank" rel="noreferrer">
 									densitydesign.org
-								</a>
-								.
+								</a>{" "}
+								or my (old) <a href="https://www.behance.net/tommasoelli">Behance profile</a>.
 							</p>
-							<p> Back to <Link href="/">home</Link></p>
+							<p>
+								{" "}
+								Back to <Link href="/">home</Link>
+							</p>
 						</span>
 					</Col>
 				</Row>
