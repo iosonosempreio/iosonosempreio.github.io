@@ -33,18 +33,19 @@ export default function Home() {
 								<br />
 								He obtained a Ph.D. in Design in 2022 with a thesis on visualization, literary studies, and design. He is a member of{" "}
 								<a href="https://densitydesign.org/person/tommaso-elli/">DensityDesign</a> since 2016, participates in the development of{" "}
-								<a href="https://rawgraphs.io/">RAWGraphs</a>, and is one of the founders of <a href="https://abilitiamo.org/">Associazione Abilítiamo Autismo</a>. In his
-								spare time, he enjoys mountains and music.
+								<a href="https://rawgraphs.io/">RAWGraphs</a>, and is one of the founders of{" "}
+								<a href="https://abilitiamo.org/">Associazione Abilítiamo Autismo</a>. In his spare time, he enjoys mountains and music.
 							</p>
 							<p className="big">
+								Have a look at my{" "}
 								<a href="2022-10-10.pdf" download="tommaso-elli-CV2022-10-10.pdf">
 									CV
 								</a>{" "}
-								and{" "}
+								and at some{" "}
 								<a href="https://densitydesign.org/person/tommaso-elli/" target="_blank" rel="noreferrer">
-									portfolio
-								</a>
-								.
+									projects
+								</a>{" "}
+								I worked on.
 							</p>
 						</span>
 					</Col>
