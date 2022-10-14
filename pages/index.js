@@ -42,7 +42,7 @@ export default function Home() {
 								<a href="2022-10-10.pdf" download="tommaso-elli-CV2022-10-10.pdf">
 									CV
 								</a>{" "}
-								and at some <Link href="/projects">projects</Link> I worked on.
+								and at some <a href="https://docs.google.com/document/d/1Kips9qZ3bBYpxM4ASabZhgg5xm5az7n0_DPoyQThQJo/edit?usp=sharing">projects</a> I worked on.
 							</p>
 						</span>
 					</Col>
