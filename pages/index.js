@@ -29,13 +29,13 @@ export default function Home() {
 					>
 						<span>
 							<p className="big">
-								An information designer, design researcher and front-end developer working across data, information visualization, digital humanities, and
+								I am an information designer, design researcher and front-end developer. I work across data, information visualization, digital humanities, and
 								creative coding.
 								<br />
-								He obtained a Ph.D. in Design in 2022 with a thesis on visualization, literary studies, and design. He is a member of{" "}
-								<a href="https://densitydesign.org/person/tommaso-elli/">DensityDesign</a> since 2016, participates in the development of{" "}
-								<a href="https://rawgraphs.io/">RAWGraphs</a>, and is one of the founders of{" "}
-								<a href="https://abilitiamo.org/">Associazione Abilítiamo Autismo</a>. In his spare time, he enjoys mountains and music.
+								I obtained a Ph.D. in Design in 2022 with a thesis on visualization, literary studies, and design. I am a member of{" "}
+								<a href="https://densitydesign.org/person/tommaso-elli/">DensityDesign</a> since 2016, I participate in the development of{" "}
+								<a href="https://rawgraphs.io/">RAWGraphs</a>, and I am one of the founders of{" "}
+								<a href="https://abilitiamo.org/">Associazione Abilítiamo Autismo</a>. In my spare time, I enjoy mountains and music.
 							</p>
 							<p className="big">
 								Have a look at my{" "}
@@ -44,9 +44,9 @@ export default function Home() {
 									rel="noreferrer"
 									target="_blank"
 								>
-									resumé
+									résumé
 								</a>
-								, at my{" "}
+								, my{" "}
 								<a href="2022-10-10.pdf" download="tommaso-elli-CV2022-10-10.pdf">
 									extended CV
 								</a>
