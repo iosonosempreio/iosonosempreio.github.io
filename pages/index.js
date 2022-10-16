@@ -39,10 +39,22 @@ export default function Home() {
 							</p>
 							<p className="big">
 								Have a look at my{" "}
+								<a
+									href="Résumé Elli Tommaso 20221016.pdf"
+									rel="noreferrer"
+									target="_blank"
+								>
+									resumé
+								</a>
+								, at my{" "}
 								<a href="2022-10-10.pdf" download="tommaso-elli-CV2022-10-10.pdf">
-									CV
-								</a>{" "}
-								and at some <a href="https://docs.google.com/document/d/1Kips9qZ3bBYpxM4ASabZhgg5xm5az7n0_DPoyQThQJo/edit?usp=sharing">projects</a> I worked on.
+									extended CV
+								</a>
+								, or at some{" "}
+								<a href="https://docs.google.com/document/d/1Kips9qZ3bBYpxM4ASabZhgg5xm5az7n0_DPoyQThQJo/edit?usp=sharing" rel="noreferrer" target="_blank">
+									projects
+								</a>
+								.
 							</p>
 						</span>
 					</Col>
