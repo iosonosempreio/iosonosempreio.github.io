@@ -40,13 +40,13 @@ export default function Home() {
 							<p className="big">
 								Have a look at my{" "}
 								<a
-									href="Résumé Elli Tommaso 20221016.pdf"
+									href="/resume202210.pdf"
 									download="tommaso-elli-resume-2022-10.pdf"
 								>
 									résumé
 								</a>
 								, my{" "}
-								<a href="2022-10-10.pdf" download="tommaso-elli-CV2022-10.pdf">
+								<a href="/cv202210.pdf" download="tommaso-elli-CV2022-10.pdf">
 									extended CV
 								</a>
 								, or at some{" "}
