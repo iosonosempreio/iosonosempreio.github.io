@@ -31,18 +31,14 @@ export default function Home() {
 							<p className="big">
 								I am an information designer, design researcher and front-end developer. I work across data, information visualization, digital humanities, and
 								creative coding.
-								<br />
-								I obtained a Ph.D. in Design in 2022 with a thesis on visualization, literary studies, and design. I am a member of{" "}
+								<br />I obtained a Ph.D. in Design in 2022 with a thesis on visualization, literary studies, and design. I am a member of{" "}
 								<a href="https://densitydesign.org/person/tommaso-elli/">DensityDesign</a> since 2016, I participate in the development of{" "}
 								<a href="https://rawgraphs.io/">RAWGraphs</a>, and I am one of the founders of{" "}
 								<a href="https://abilitiamo.org/">Associazione Abilítiamo Autismo</a>. In my spare time, I enjoy mountains and music.
 							</p>
 							<p className="big">
 								Have a look at my{" "}
-								<a
-									href="/resume202210.pdf"
-									download="tommaso-elli-resume-2022-10.pdf"
-								>
+								<a href="/resume202210.pdf" download="tommaso-elli-resume-2022-10.pdf">
 									résumé
 								</a>
 								, my{" "}
@@ -50,10 +46,10 @@ export default function Home() {
 									extended CV
 								</a>
 								, or at some{" "}
-								<a href="https://docs.google.com/document/d/1Kips9qZ3bBYpxM4ASabZhgg5xm5az7n0_DPoyQThQJo/edit?usp=sharing" rel="noreferrer" target="_blank">
+								<a href="https://densitydesign.org/person/tommaso-elli/" rel="noreferrer" target="_blank">
 									projects
-								</a>
-								.
+								</a>{" "}
+								done at Density.
 							</p>
 						</span>
 					</Col>
