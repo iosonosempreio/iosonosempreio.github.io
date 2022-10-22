@@ -1,49 +1,52 @@
 import { Col, Container, Row } from "react-bootstrap";
 import ExportedImage from "next-image-export-optimizer";
 import ReactMarkdown from "react-markdown";
+import MainTempate from "./MainTemplate";
+import Zoom from "react-medium-image-zoom";
+import "react-medium-image-zoom/dist/styles.css";
 
 export default function ProjectTemplate({ data }) {
 	return (
-		<>
+		<MainTempate>
 			<Container>
 				<Row>
 					<Col md="8">
-						{data.images.map((d) => (
-							<div key={d} style={{ position: "relative", width: "100%", height: 0, paddingBottom: "56%" }}>
-								<ExportedImage
-									src={"images/projects/data-wikilovesmonumens-it/" + d}
-									alt="Large Image"
-									layout="fill"
-									objectFit="cover"
-									useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP}
-									className=""
-								/>
-							</div>
+						{data.images.map((d, i) => (
+							<Zoom key={i}>
+								<div className="mb-3" style={{ position: "relative", width: "100%", height: 0, paddingBottom: "56%" }}>
+									<ExportedImage
+										src={"images/projects/" + data.id + "/" + d.src}
+										alt={d.src}
+										layout="fill"
+										// width={d.width}
+										// height={d.height}
+										objectFit="contain"
+										useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP}
+										className=""
+									/>
+								</div>
+							</Zoom>
 						))}
 					</Col>
 					<Col md="4">
 						<h5>{data.title}</h5>
 						{data.url && (
 							<>
-								<a href={data.url}>{data.url}</a>
+								<a href={data.url}>{data.url.replace("https://", "").replace("http://", "").replace("www.", "")}</a>
 							</>
 						)}
-						<h6>{data.year}</h6>
+						<h6>
+							{data.yearFrom}—{data.yearTo}
+						</h6>
 						<h6>{data.status}</h6>
 						{data.client && (
 							<>
-								<h6>Client</h6>
-								<p>{data.client}</p>
+								<h6 className="d-inline-block">Commissioner:</h6> <p className="d-inline-block">{data.client}</p>
 							</>
 						)}
 						{data.content && (
 							<>
 								<ReactMarkdown>{data.content}</ReactMarkdown>
-							</>
-						)}
-						{data.readMore && (
-							<>
-								<a href={data.readMore}>Read More</a>
 							</>
 						)}
 						{data.team && (
@@ -81,6 +84,6 @@ export default function ProjectTemplate({ data }) {
 					</Col>
 				</Row>
 			</Container>
-		</>
+		</MainTempate>
 	);
 }

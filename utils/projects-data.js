@@ -1,8 +1,10 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+const sizeOf = require("image-size");
 
 const projectsDirectory = path.join(process.cwd(), "data", "projects");
+const imagesDirectory = path.join(process.cwd(), "public", "images", "projects");
 
 export function getProjectsData() {
 	const fileNames = fs.readdirSync(projectsDirectory);
@@ -52,10 +54,21 @@ export function getSingleProjectData(id) {
 	// Use gray-matter to parse the post metadata section
 	const matterResult = matter(fileContents);
 
+	const images = matterResult.data.images.map((image) => {
+		const imagePath = path.join(imagesDirectory, id, image);
+		const { width, height } = sizeOf(imagePath);
+		return {
+			src: image,
+			width,
+			height,
+		};
+	});
+	
 	// Combine the data with the id
 	return {
 		id,
 		...matterResult.data,
-		content: matterResult.content
+		images,
+		content: matterResult.content,
 	};
 }
