@@ -3,7 +3,7 @@ import Head from "next/head";
 import { Col, Container, Row } from "react-bootstrap";
 import styles from "../styles/Home.module.scss";
 import profileImage from "../images/profile-picture.jpeg";
-import Header from "../components/header/Header";
+import Header from "../components/Header";
 import Menu from "../components/Menu";
 import Footer from "../components/Footer";
 import Link from "next/link";

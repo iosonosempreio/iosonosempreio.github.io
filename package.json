@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "open http://localhost:3000/ & next dev",
+    "optimize-images": "next-image-export-optimizer",
     "build": "next build",
     "export": "next build && next export && touch out/.nojekyll && next-image-export-optimizer",
     "pre-deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll",

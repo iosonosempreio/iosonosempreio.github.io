@@ -23,6 +23,16 @@ export function getProjectsData() {
 		// Use gray-matter to parse the post metadata section
 		const matterResult = matter(fileContents);
 
+		const images = matterResult.data.images.map((image) => {
+			const imagePath = path.join(imagesDirectory, id, image);
+			const { width, height } = sizeOf(imagePath);
+			return {
+				src: image,
+				width,
+				height,
+			};
+		});
+
 		// Combine the data with the id
 		return {
 			id,
@@ -30,7 +40,9 @@ export function getProjectsData() {
 		};
 	});
 
-	return projectsData;
+	return projectsData.sort((a,b)=>{
+		return Number(b.yearFrom) - Number(a.yearFrom)
+	});
 }
 
 export function getProjectsIds() {
@@ -63,7 +75,7 @@ export function getSingleProjectData(id) {
 			height,
 		};
 	});
-	
+
 	// Combine the data with the id
 	return {
 		id,

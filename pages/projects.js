@@ -1,8 +1,12 @@
-import { ProjectsTemplate } from "../components/Templates";
+import { ProjectsGalleryTemplate } from "../components/Templates";
 import { getProjectsData } from "../utils/projects-data";
 
 export default function Projects({ projectsData }) {
-	return <ProjectsTemplate data={projectsData} />;
+	return (
+		<>
+			<ProjectsGalleryTemplate data={projectsData} />
+		</>
+	);
 }
 
 export async function getStaticProps() {

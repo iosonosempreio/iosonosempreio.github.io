@@ -1,3 +1,9 @@
 .header {
 	min-height: var(--header-size);
 }
+
+.headerBootstrap {
+	background-color: #f8f8f880;
+	height: 56px;
+	backdrop-filter: blur(100px);
+}

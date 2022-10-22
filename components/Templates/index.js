@@ -1,6 +1,6 @@
-import MainTempate from "./MainTemplate";
+import MainTemplate from "./MainTemplate";
 import PageTemplate from "./PageTemplate";
 import ProjectTemplate from "./ProjectTemplate";
-import ProjectsTemplate from "./ProjectsTemplate";
+import ProjectsGalleryTemplate from "./ProjectsGalleryTemplate";
 
-export { MainTempate, PageTemplate, ProjectTemplate, ProjectsTemplate };
+export { MainTemplate, PageTemplate, ProjectTemplate, ProjectsGalleryTemplate };
