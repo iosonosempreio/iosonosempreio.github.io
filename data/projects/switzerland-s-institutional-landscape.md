@@ -1,6 +1,6 @@
 ---
 title: Switzerland's institutional landscape 1933–1980
-url: "https://www.uek-administrative-versorgungen.ch/interactivereport/en/"
+url: "https://www.uek-administrative-versorgungen.ch/interactivereport/en"
 yearFrom: "2017"
 yearTo: "2018"
 client: "CH Independent Expert Commission"
