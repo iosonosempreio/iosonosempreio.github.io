@@ -11,7 +11,7 @@ export default function ProjectsGalleryTemplate({ data }) {
 				<Row>
 					{data.map((d) => (
 						<Col md="6" key={d.id} className={classNames("mb-4")}>
-							<Link href={"/projects/" + d.id}>
+							<Link href={"/projects/" + d.id} passHref>
 								<div
 									style={{ position: "relative", width: "100%", height: 0, paddingBottom: "56%", cursor: "pointer" }}
 									className={classNames("zoomableImage")}
