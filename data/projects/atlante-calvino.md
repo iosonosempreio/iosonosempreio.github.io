@@ -3,7 +3,7 @@ title: Atlante Calvino. Literature and Visualization
 yearFrom: "2017"
 yearTo: "2020"
 roles: ["Design lead", "design", "development"]
-team: ["Angeles Briones", "Beatrice Gobbo", "Michele Mauri", "Inmagik"]
+team: ["Ángeles Briones", "Beatrice Gobbo", "Michele Mauri", "Inmagik"]
 specialThanks: ["Marco Pappalepore", "Margherita Parigini", "Virginia Giustetto", "Valeria Cavalloro", "Francesca Serra", "Paolo Ciuccarelli"]
 client: "University of Geneva"
 technologies: ["React", "D3"]
