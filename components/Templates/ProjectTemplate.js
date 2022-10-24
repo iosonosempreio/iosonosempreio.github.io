@@ -16,7 +16,7 @@ export default function ProjectTemplate({ data }) {
 							{data.images.map((d, i) => (
 								<Col key={i} xs="6" md="12" className={classNames("m-0", "mb-3")}>
 									<Zoom>
-										<div style={{ position: "relative", width: "100%", height: 0, paddingBottom: "56.25%" }} className={classNames("zoomableImage")}>
+										<div style={{ position: "relative", width: "100%", height: 0, paddingBottom: "56.25%" }} className={classNames("zoomableImage", "rounded")}>
 											<ExportedImage
 												src={"images/projects/" + data.id + "/" + d.src}
 												alt={d.src}

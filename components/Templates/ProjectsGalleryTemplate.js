@@ -8,13 +8,13 @@ export default function ProjectsGalleryTemplate({ data }) {
 	return (
 		<MainTemplate>
 			<Container>
-				<Row>
+				<Row className={classNames("mt-4")}>
 					{data.map((d) => (
 						<Col md="6" key={d.id} className={classNames("mb-4")}>
 							<Link href={"/projects/" + d.id} passHref>
 								<div
 									style={{ position: "relative", width: "100%", height: 0, paddingBottom: "56%", cursor: "pointer" }}
-									className={classNames("zoomableImage")}
+									className={classNames("zoomableImage", "rounded")}
 								>
 									<ExportedImage
 										src={"images/projects/" + d.id + "/" + d.images[0]}
