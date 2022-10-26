@@ -3,7 +3,7 @@ title: data.wikilovesmonumens.it
 yearFrom: "2022"
 yearTo: "In progress"
 roles: ["Design lead","design","development"]
-team: ["Andrea Benedetti","Angeles Briones","Michele Mauri","Francesca Gheli","Alessandro Quets"]
+team: ["Andrea Benedetti","Ángeles Briones","Michele Mauri","Francesca Gheli","Alessandro Quets"]
 client: "Wikimedia Italia"
 technologies: ["React","D3","Wikidata","SPARQL","Django"]
 url: "http://data.wikilovesmonuments.it"
