@@ -7,8 +7,8 @@ const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
 
 export default function TypographicCamera() {
 	let capture;
-	let w = 64;
-	let h = 64;
+	let w = 48;
+	let h = 48;
 	let letters = "Lambrock".split("");
 	let sizes = Array.from({ length: 10 }, (_, i) => i * 3 + 8);
 	let arr = [];
@@ -18,7 +18,7 @@ export default function TypographicCamera() {
 		arr = [];
 		for (let y = 0; y < h; y++) {
 			for (let x = 0; x < w; x++) {
-				arr.push({ size: p5.random(sizes), char: p5.random(letters) });
+				arr.push({ size: p5.random(sizes), char: p5.random(letters), angle: p5.round(p5.random(0,360)) });
 			}
 		}
 	};
@@ -38,12 +38,13 @@ export default function TypographicCamera() {
 		p5.noStroke();
 		p5.textAlign(p5.CENTER);
 		p5.textFont("Lunchtype");
+		p5.angleMode(p5.DEGREES)
 	};
 
 	const draw = (p5) => {
-		if (p5.random()>0.85) {
-			doArr(p5);
-		}
+		// if (p5.random()>0.85) {
+		// 	doArr(p5);
+		// }
 		p5.background(40);
 		const captured = capture.get(0, 0, w, h);
 		captured.loadPixels();
@@ -56,9 +57,11 @@ export default function TypographicCamera() {
 				const blue = pixels[index + 2];
 				p5.push();
 				p5.fill(red, green, blue);
-				const { size, char } = arr[x + y * w];
+				const { size, char, angle } = arr[x + y * w];
 				p5.textSize(size);
-				p5.text(char, (x + 0.5) * k, y * k + size / 2);
+				p5.translate((x + 0.5) * k, y * k + size / 2)
+				// p5.rotate(angle)
+				p5.text(char, 0, 0);
 				p5.pop();
 			}
 		}
