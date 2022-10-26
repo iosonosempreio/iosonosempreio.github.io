@@ -7,10 +7,10 @@ const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
 
 export default function TypographicCamera() {
 	let capture;
-	let w = 48;
-	let h = 48;
+	let w = 36;
+	let h = 36;
 	let letters = "Lambrock".split("");
-	let sizes = Array.from({ length: 10 }, (_, i) => i * 3 + 8);
+	let sizes = Array.from({ length: 10 }, (_, i) => i * 2 + 12);
 	let arr = [];
 	let k;
 
@@ -25,7 +25,7 @@ export default function TypographicCamera() {
 
 	const setup = (p5, canvasParentRef) => {
 		doArr(p5);
-		const canvas = p5.createCanvas(500, 500);
+		const canvas = p5.createCanvas(400, 400);
 		canvas.parent(canvasParentRef);
 		
 		console.log(canvasParentRef)

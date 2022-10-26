@@ -11,7 +11,8 @@ export default function Header() {
 			<Navbar expand="lg" className={classNames(styles.headerBootstrap, "sticky-top")} collapseOnSelect={true}>
 				<Container>
 					<Navbar.Brand className="py-0" style={{ fontSize: "inherit" }}>
-						<h6 className={classNames("color2", "m-0", "d-inline-block")}>Tommaso Elli</h6>{" "}
+						<h6 className={classNames("color2", "m-0", "d-inline-block")}>Tommaso Elli</h6>
+						<br />
 						<p className={classNames("color2", "m-0", "d-inline-block")}>Researcher + Designer + Developer</p>
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
