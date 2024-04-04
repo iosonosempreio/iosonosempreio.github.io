@@ -29,7 +29,7 @@ export default function Home() {
 							</p>
 							<p className="">
 								Have a look at my{" "}
-								<a href="/resume202210.pdf" download="tommaso-elli-resume-2022-10.pdf">
+								<a href="/resume202403.pdf" download="tommaso-elli-resume-2024-03.pdf">
 									résumé
 								</a>
 								, my{" "}
