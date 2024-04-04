@@ -20,12 +20,17 @@ export default function Home() {
 					>
 						<span>
 							<p className="">
-								I am an information designer, design researcher and front-end developer. I work across data, information visualization, digital humanities, and
-								creative coding.
-								<br />I obtained a Ph.D. in Design in 2022 with a thesis on visualization, literary studies, and design. I am a member of{" "}
-								<a href="https://densitydesign.org/person/tommaso-elli/">DensityDesign</a> since 2016, I participate in the development of{" "}
-								<a href="https://rawgraphs.io/">RAWGraphs</a>, and I am one of the founders of{" "}
-								<a href="https://abilitiamo.org/">Associazione Abilítiamo Autismo</a>. In my spare time, I enjoy mountains and music.
+								I currently work as{" "}
+								<a href="https://dipartimentodesign.polimi.it/it/staff/show/329404">junior assistant professor</a> at
+								the Design Department of Politecnico di Milano.
+							</p>
+							<p className="">
+								I am an information designer, design researcher, and front-end developer. I obtained a Ph.D.
+								in Design in 2022 with a thesis on visualization, literary studies, and design. I work across data,
+								information visualization, digital design, digital humanities and sustainability in fashion retail. I collaborate with <a href="https://densitydesign.org/person/tommaso-elli/">DensityDesign</a> since 2016, and with the <a href="https://www.retailexperiencelab.com/person/514/">Retail Experience Lab</a> since 2023. I
+								participate in the development of <a href="https://rawgraphs.io/">RAWGraphs</a>, and I am co-founder and
+								board member of <a href="https://abilitiamo.org/">Associazione Abilítiamo Autismo</a>.<br />
+								In my spare time, I enjoy mountains, music, nerdy things, and cooking.
 							</p>
 							<p className="">
 								Have a look at my{" "}
@@ -46,7 +51,10 @@ export default function Home() {
 						md={{ span: 5, offset: 0, order: 2 }}
 						xl={{ span: 4, offset: 0 }}
 					>
-						<div className={classNames("position-relative", "rounded", "h-100", "w-100")} style={{ overflow: "hidden", minHeight: "30vh" }}>
+						<div
+							className={classNames("position-relative", "rounded", "h-100", "w-100")}
+							style={{ overflow: "hidden", minHeight: "30vh" }}
+						>
 							<ExportedImage
 								src={profileImage.src}
 								alt={profileImage.src}
