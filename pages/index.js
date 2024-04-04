@@ -33,7 +33,7 @@ export default function Home() {
 									résumé
 								</a>
 								, my{" "}
-								<a href="/cv202210.pdf" download="tommaso-elli-CV2022-10.pdf">
+								<a href="/Elli Tommaso 2024-03.pdf.pdf" download="tommaso-elli-CV2024-03.pdf">
 									extended CV
 								</a>
 								, or at some <Link href="/projects">projects</Link>.
