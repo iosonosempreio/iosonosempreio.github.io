@@ -24,6 +24,9 @@ export default function Header() {
 							<Link href="/projects">
 								<a className={classNames("nav-link")}>Projects</a>
 							</Link>
+							{/* <Link href="/experiments">
+								<a className={classNames("nav-link")}>Experiments</a>
+							</Link> */}
 						</Nav>
 					</Navbar.Collapse>
 				</Container>
