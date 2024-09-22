@@ -9,12 +9,18 @@ export default function Footer() {
 			<Container className="my-3">
 				<Row>
 					<Col md="6" className={classNames("text-start")}>
-						Website designed and coded by me.
+						{/* Website designed and coded by me. */}
 					</Col>
 					<Col md="6" className={classNames("text-end")}>
-						<Link href="https://twitter.com/iosonosempreio">
+						{/* <Link href="https://twitter.com/iosonosempreio">
 							<a target="_blank" rel="noopener noreferrer">
 								twitter
+							</a>
+						</Link>{" "}
+						/{" "} */}
+						<Link href="https://www.linkedin.com/in/tommaso-elli/">
+							<a target="_blank" rel="noopener noreferrer">
+								linkedin
 							</a>
 						</Link>{" "}
 						/{" "}
