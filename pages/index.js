@@ -7,66 +7,75 @@ import ExportedImage from "next-image-export-optimizer";
 import Link from "next/link";
 
 export default function Home() {
-	return (
-		<PageTemplate>
-			<Container className={classNames("align-self-center")}>
-				<Row>
-					<Col
-						xs={{ span: 12, offset: 0, order: 2 }}
-						sm={{ span: 10, offset: 1 }}
-						md={{ span: 5, offset: 1, order: 1 }}
-						xl={{ span: 4, offset: 2 }}
-						className={classNames("py-3")}
-					>
-						<span>
-							<p className="">
-								I currently work as{" "}
-								<a href="https://dipartimentodesign.polimi.it/it/staff/show/329404">junior assistant professor</a> at
-								the Design Department of Politecnico di Milano.
-							</p>
-							<p className="">
-								I am an information designer, design researcher, and front-end developer. I obtained a Ph.D.
-								in Design in 2022 with a thesis on visualization, literary studies, and design. I work across data,
-								information visualization, digital design, digital humanities and sustainability in fashion retail. I collaborate with <a href="https://densitydesign.org/person/tommaso-elli/">DensityDesign</a> since 2016, and with the <a href="https://www.retailexperiencelab.com/person/514/">Retail Experience Lab</a> since 2023. I
-								participate in the development of <a href="https://rawgraphs.io/">RAWGraphs</a>, and I am co-founder and
-								board member of <a href="https://abilitiamo.org/">Associazione Abilítiamo Autismo</a>.<br />
-								In my spare time, I enjoy mountains, music, nerdy things, and cooking.
-							</p>
-							<p className="">
-								Have a look at my{" "}
-								<a href="/resume.pdf" download="tommaso-elli-resume.pdf">
-									résumé
-								</a>
-								, my{" "}
-								<a href="/cv.pdf" download="tommaso-elli-CV.pdf">
-									extended CV
-								</a>
-								, or at some <Link href="/projects">projects</Link>.
-							</p>
-						</span>
-					</Col>
-					<Col
-						xs={{ span: 12, offset: 0, order: 1 }}
-						sm={{ span: 10, offset: 1 }}
-						md={{ span: 5, offset: 0, order: 2 }}
-						xl={{ span: 4, offset: 0 }}
-					>
-						<div
-							className={classNames("position-relative", "rounded", "h-100", "w-100")}
-							style={{ overflow: "hidden", minHeight: "30vh" }}
-						>
-							<ExportedImage
-								src={profileImage.src}
-								alt={profileImage.src}
-								// width={profileImage.width}
-								// height={profileImage.height}
-								layout="fill"
-								objectFit="cover"
-								useWebp={process.env.nextImageExportOptimizer_storePicturesInWEBP}
-							/>
-						</div>
-					</Col>
-					{/* <Col
+  return (
+    <PageTemplate>
+      <Container className={classNames("align-self-center")}>
+        <Row>
+          <Col
+            xs={{ span: 12, offset: 0, order: 2 }}
+            sm={{ span: 10, offset: 1 }}
+            md={{ span: 5, offset: 1, order: 1 }}
+            xl={{ span: 4, offset: 2 }}
+            className={classNames("py-3")}
+          >
+            <span>
+              <p className="">
+                Research Associate in Digital humanities at the Walter Benjamin
+                Kolleg, Universität Bern.
+              </p>
+              <p className="">
+                I am an information designer, design researcher, and front-end
+                developer. I obtained a Ph.D. in Design in 2022 with a thesis on
+                visualization, literary studies, and design. I work across data,
+                information visualization, digital design, digital humanities
+                and sustainability.
+              </p>
+			  <p>
+				In my spare time, I enjoy mountains, music, nerdy things, and
+                cooking.
+			  </p>
+              <p className="">
+                Have a look at my{" "}
+                <a href="/resume.pdf" download="tommaso-elli-resume.pdf">
+                  résumé
+                </a>
+                , my{" "}
+                <a href="/cv.pdf" download="tommaso-elli-CV.pdf">
+                  extended CV
+                </a>
+                , or at some <Link href="/projects">projects</Link>.
+              </p>
+            </span>
+          </Col>
+          <Col
+            xs={{ span: 12, offset: 0, order: 1 }}
+            sm={{ span: 10, offset: 1 }}
+            md={{ span: 5, offset: 0, order: 2 }}
+            xl={{ span: 4, offset: 0 }}
+          >
+            <div
+              className={classNames(
+                "position-relative",
+                "rounded",
+                "h-100",
+                "w-100",
+              )}
+              style={{ overflow: "hidden", minHeight: "30vh" }}
+            >
+              <ExportedImage
+                src={profileImage.src}
+                alt={profileImage.src}
+                // width={profileImage.width}
+                // height={profileImage.height}
+                layout="fill"
+                objectFit="cover"
+                useWebp={
+                  process.env.nextImageExportOptimizer_storePicturesInWEBP
+                }
+              />
+            </div>
+          </Col>
+          {/* <Col
 						xs={{ span: 12, offset: 0, order: 2 }}
 						sm={{ span: 10, offset: 1 }}
 						md={{ span: 8, offset: 2, order: 2 }}
@@ -112,8 +121,8 @@ export default function Home() {
 							<div style={{ backgroundImage: `url(${profileImage.src})` }} />
 						</div>
 					</Col> */}
-				</Row>
-			</Container>
-		</PageTemplate>
-	);
+        </Row>
+      </Container>
+    </PageTemplate>
+  );
 }
