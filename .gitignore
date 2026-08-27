@@ -14,7 +14,8 @@
 
 # production
 /build
-/public/nextImageExportOptimizer
+**/nextImageExportOptimizer/
+**/next-image-export-optimizer-hash.json
 
 # misc
 .DS_Store
